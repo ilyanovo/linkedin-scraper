@@ -8,4 +8,5 @@ To begin scraping, you should update the parameters in `update.py`:
 - company_industry: Name of the industry from the search query.
 - Then run `python3 scrap.py`.
 
+Also, pleaase make sure that you have [Chromedriver](https://googlechromelabs.github.io/chrome-for-testing/#stable) installed.
 A new Chrome window will open, and you will be redirected to LinkedIn. Authorize, and then press Enter in the console to start parsing.
