@@ -84,6 +84,7 @@ def parse_request(number_of_pages, number_of_companies_per_page, driver):
         scroll_script = "window.scrollTo(0, document.body.scrollHeight);"
         driver.execute_script(scroll_script)
 
+        ### stop search scrolling when most of the companies on the pages do not have any followers
         if (
             tmp_extracted['followers']
                 .str.replace("followers", "")

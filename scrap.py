@@ -9,7 +9,7 @@ from parse_company import get_company_workers
 search_url = "https://www.linkedin.com/search/results/companies/?companyHqGeo=%5B%22103644278%22%5D&companySize={companySize}&"\
     "industryCompanyVertical={industryCompanyVertical}&origin=FACETED_SEARCH&sid=z77"
 number_of_pages = 99
-number_of_companies_per_page = 10
+number_of_companies_per_page = 10 # number of companies on linkedin search page
 company_size = "%5B%22E%22%5D" #stands for "200 - 500" company size
 company_industry = "%5B%222468%22%5D" #stands for "Electrical Equipment Manufacturing"
 
@@ -54,6 +54,5 @@ def main():
     all_workers.to_csv("workers.csv", index=False)
     
 
-    
 if __name__ == "__main__":
     main()
