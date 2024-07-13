@@ -71,7 +71,7 @@ def parse_request(number_of_pages, number_of_companies_per_page, driver):
         print("Empty page, skippping")
         return 
 
-    total_pages = int(round(total_results_found / number_of_companies_per_page))
+    total_pages = min(number_of_pages, int(round(total_results_found / number_of_companies_per_page)))
 
     page_counter = 0
     for page in tqdm(range(total_pages), desc="Parsing search"):
