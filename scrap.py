@@ -11,7 +11,7 @@ from parse_company_insights import get_company_open_positions, parse_insights
 
 search_url = "https://www.linkedin.com/search/results/companies/?companyHqGeo=%5B%22103644278%22%5D&companySize={companySize}&"\
     "industryCompanyVertical={industryCompanyVertical}&origin=FACETED_SEARCH&sid=z77"
-number_of_pages = 150
+number_of_pages = 100
 number_of_companies_per_page = 10 # number of companies on linkedin search page
 
 company_size_list = [
